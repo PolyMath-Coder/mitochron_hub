@@ -9,7 +9,7 @@ It is designed to handle the ticket booking process, ensuring that only a specif
 
 - [Postman Documentation](https://documenter.getpostman.com/view/26264962/2s93mByKnY)
 
-- [Live API](https://mitochron-server.onrender.com/)
+- [Live API](https://mitochron-assessment.onrender.com)
 
 ## Technologies
 
