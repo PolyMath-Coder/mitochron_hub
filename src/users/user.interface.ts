@@ -5,7 +5,11 @@ export default interface IUser extends Document {
   age: {
     type: number;
   };
+
   gender: {
     type: string;
+  };
+  preferredMovieGenre: {
+    type: String;
   };
 }

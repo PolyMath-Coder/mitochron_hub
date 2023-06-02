@@ -1,11 +1,10 @@
+import { Transform } from 'stream';
+
 export default interface ITicket extends Document {
-  movieTitle: {
-    type: string;
-  };
-  availableTickets: {
-    type: number;
-  };
-  price: {
-    type: number;
-  };
+  _id: number;
+  movieTitle: string;
+  availableTickets: number;
+  movieGenre: string;
+  price: number;
+  transform(): Transform;
 }

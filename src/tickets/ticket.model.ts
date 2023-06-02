@@ -1,8 +1,11 @@
+import { Transformer } from 'typescript';
 import ITicket from './ticket.interface';
 
-import mongoose, { Schema } from 'mongoose';
+import mongoose, { Model, Schema } from 'mongoose';
 
-const ticketSchema: Schema = new Schema({
+interface TicketModel extends Model<ITicket> {}
+
+const ticketSchema: Schema = new Schema<ITicket>({
   movieTitle: {
     type: String,
     trim: true,
@@ -10,11 +13,20 @@ const ticketSchema: Schema = new Schema({
   availableTickets: {
     type: Number,
   },
+  movieGenre: {
+    type: String,
+    trim: true,
+  },
+
   price: {
     type: Number,
   },
 });
 
-const Ticket = mongoose.model<ITicket>('Ticket', ticketSchema);
+// ticketSchema.methods.transform = function(): {
+//   const {} = this
+// }
+
+const Ticket = mongoose.model<any>('Ticket', ticketSchema);
 
 export default Ticket;

@@ -5,3 +5,5 @@ import { createUser } from './user.controller';
 const userRouter: Router = Router();
 
 userRouter.post('/create', createUser);
+
+export default userRouter;

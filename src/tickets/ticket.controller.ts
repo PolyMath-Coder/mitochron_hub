@@ -16,4 +16,15 @@ const getTickets = catchAsync(async (req: Request, res: Response) => {
     .json({ status: 'success', message: 'All tickets now retrieved...', data });
 });
 
-export { createTicket, getTickets };
+const bookTicket = catchAsync(async (req: Request, res: Response) => {
+  const { userId, ticketId } = req.query;
+
+  const data = await ticketService.bookOneTicket(userId, ticketId);
+  res.status(201).json({
+    status: 'success',
+    message: 'Ticket successfully booked...',
+    data,
+  });
+});
+
+export { createTicket, getTickets, bookTicket };

@@ -13,6 +13,9 @@ const userSchema: Schema = new Schema({
   gender: {
     type: String,
   },
+  preferredMovieGenre: {
+    type: String,
+  },
 });
 
 const Ticket = mongoose.model<IUser>('User', userSchema);
