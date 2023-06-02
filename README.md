@@ -8,7 +8,7 @@
 
 - [Live API](https://mitochron-server.onrender.com/)
 
-## Stack
+## Technologies
 
 <div align="center">
 
