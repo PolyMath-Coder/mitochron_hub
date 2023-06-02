@@ -1,5 +1,8 @@
 # Mitochron Hub Junior-level Backend Engineer Coding Challenge
 
+This server-side application is a semaphore-based simplified ticket booking system for a filmhouse/cinema.
+It is designed to handle the ticket booking process, ensuring that only a specific number of customers can book tickets simultaneously.
+
 ---
 
 ## Useful Links.
